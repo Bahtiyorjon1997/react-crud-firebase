@@ -9,12 +9,19 @@ function App() {
             <img src="" alt="" />
           </Icon>
           <Content>
-            <li>Home</li>
-            <li>Add Member</li>
-            <li>Log Out</li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Add Member</a>
+            </li>
+            <li>
+              <a href="#">Log Out</a>
+            </li>
           </Content>
         </NavCont>
       </NavBar>
+      <MainContent></MainContent>
     </AppWrap>
   );
 }
@@ -39,4 +46,8 @@ const NavCont = styled.div``;
 const Icon = styled.div``;
 
 const Content = styled.ul``;
+
+const MainContent = styled.div`
+  margin-left: 5rem;
+`;
 export default App;
