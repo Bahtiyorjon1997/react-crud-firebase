@@ -34,26 +34,22 @@ const AppWrap = styled.div`
   box-sizing: border-box;
   width: 100vw;
   min-height: 100vh;
-  background: #ac6464;
+  background: #ebeef1;
   display: flex;
   flex-direction: column;
 `;
 
 const NavBar = styled.nav`
   height: 65px;
-  background: #ca9e9e;
-  display: wrap;
-  align-items: center;
-
+  background: #2b2cb8;
   right: 5rem;
   left: 5rem;
 `;
 
 const NavCont = styled.div`
-  margin: 0 5rem;
+  margin: 5px 5rem;
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
 `;
 
 const Icon = styled.div`
@@ -64,7 +60,24 @@ const Icon = styled.div`
   }
 `;
 
-const Content = styled.ul``;
+const Content = styled.ul`
+  font-family: "Poppins" sans-serif;
+  list-style: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+
+  li > a {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.165em !important;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 0 19px;
+    display: inline-block;
+  }
+`;
 
 const MainContent = styled.div`
   margin-left: 5rem;
